@@ -1,4 +1,4 @@
-import UserStore from "@/helpers/utils";
+import UserStore from "@/services/users";
 import { User } from "@/dto/users";
 import { useEffect, useState } from "react";
 

@@ -1,5 +1,7 @@
 export interface User {
-    id?: string;
+    id: string;
     name: string;
-    password?: string;
+    password: string;
 }
+
+export type types = "success" | "error" | "warning" | "info"
