@@ -3,6 +3,8 @@ import { User } from "@/dto/users";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { HandleNotification } from "@/helpers/utils";
+
+
 const userStorage = new UserStore()
 const ListUsers = () => {
     const [data, setData] = useState<User[]>([])
