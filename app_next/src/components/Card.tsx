@@ -3,7 +3,6 @@ import { imgAndIcon } from '@/helpers/utils';
 import Image from "next/image"
 import Button from './Button';
 import { JSX, useState } from 'react';
-import Bagde from './Badge';
 
 const imgAndIcons = imgAndIcon();
 interface card {

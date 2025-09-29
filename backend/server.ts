@@ -81,4 +81,16 @@ app.delete('/users/:id', async (req, res) => {
   }
 });
 
+
+
+// CARDS
+app.get('/cards', async (req, res) => {
+  try {
+    const { rows } = await db.query('SELECT * FROM Cards');
+    res.json(rows);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 app.listen(3000, () => console.log('Server is running on: http://localhost:3000'));
